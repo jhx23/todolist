@@ -13,7 +13,6 @@ public class TodoService {
     private Long nextId = 2L;
 
     public void createTodo(String content) {
-        if (todoList.isEmpty()) todoList.add(new TodoDto(1L,null,true));
         TodoDto newTodo = new TodoDto(nextId,content,false);
         nextId++;
         todoList.add(newTodo);

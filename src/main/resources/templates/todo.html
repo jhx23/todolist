@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <title>ToDoList</title>
 </head>
 <body>
-<form th:action="@{/todo/create}" method="post">
+<form th:action="@{/todo/create}" method="post" accept-charset="UTF-8">
     <h1>TODO List</h1>
     <label for="todo-desc">새로운 할일: <input type="text" id="todo desc" name="todo-desc"></label>
     <input type="submit" value="등록">
