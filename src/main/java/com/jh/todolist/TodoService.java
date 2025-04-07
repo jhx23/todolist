@@ -23,7 +23,7 @@ public class TodoService {
     public void updateTodo(Long id) {
         TodoDto todoDto = todoList.stream()
                 .filter(todo -> todo.getId().equals(id))
-                .peek(todo -> todo.setDone(!todo.isDone()))
+                .peek(todo -> todo.setDone(!todo.getDone()))
                 .findFirst()
                 .orElse(null);
         System.out.println(todoDto);

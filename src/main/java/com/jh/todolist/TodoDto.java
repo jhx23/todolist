@@ -12,6 +12,7 @@ public class TodoDto {
         this.content = content;
         this.done = done;
     }
+
     public Long getId() {
         return id;
     }
@@ -28,7 +29,7 @@ public class TodoDto {
         this.content = content;
     }
 
-    public boolean isDone() {
+    public boolean getDone() {
         return done;
     }
 
